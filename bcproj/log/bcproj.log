@@ -1,0 +1,1640 @@
+# Logfile created on 2011-06-16 14:33:44 -0700 by logger.rb/25413
+D, [2011-06-16T14:33:44.142991 #69057] DEBUG -- : {"url"=>"aisltd.basecamphq.com", "user"=>"cmaujean", "password"=>"francoDominus", "project_id"=>"3146702", "contracthours"=>40, "rolloverhours"=>0, "additionalhours"=>0, "hoursgratis"=>0, "timezoneoffset"=>-3, "logger"=>{"file"=>"log/bcproj.log", "level"=>"Logger::DEBUG"}, "colors"=>{"closelow"=>{"foreground"=>"yellow", "background"=>"white"}, "midlow"=>{"foreground"=>"orange", "background"=>"white"}, "farlow"=>{"foreground"=>"red", "background"=>"white"}, "ontrack"=>{"foreground"=>"green", "background"=>"white"}, "closehigh"=>{"foreground"=>"yellow", "background"=>"white"}, "midhigh"=>{"foreground"=>"orange", "background"=>"white"}, "farhigh"=>{"foreground"=>"red", "background"=>"white"}}}
+D, [2011-06-16T14:33:44.552428 #69057] DEBUG -- : TODAY: 2011-06-16T11:33:44-10:00
+D, [2011-06-16T14:33:44.552508 #69057] DEBUG -- : BCTODAY: 20110616
+D, [2011-06-16T14:33:44.552546 #69057] DEBUG -- : BCFROM: 20110601
+D, [2011-06-16T14:33:44.552584 #69057] DEBUG -- : DAYSINMONTH: 30
+D, [2011-06-16T14:33:44.552634 #69057] DEBUG -- : DAYSSINCEBEGIN: 114468712649/7200000000
+D, [2011-06-16T14:33:45.521779 #69057] DEBUG -- : ENTRIES: [#<Basecamp::TimeEntry:0x1e093f8 @attributes={"date"=>Mon, 13 Jun 2011, "description"=>"CC: Explanation to Ron", "hours"=>0.25, "id"=>39987547, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e08a34 @attributes={"date"=>Sun, 12 Jun 2011, "description"=>"SA: New Marcia IP (plus respooling mail, misc emails)", "hours"=>0.183333, "id"=>39941619, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e08110 @attributes={"date"=>Sat, 11 Jun 2011, "description"=>"SA: Email Issues; undelivered folder was clogged; mail.feynman.net was unresponsive", "hours"=>1.18333, "id"=>39941629, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e07814 @attributes={"date"=>Sat, 11 Jun 2011, "description"=>"investigation of mail issues. turned off sqlite access for the time being", "hours"=>1.03333, "id"=>39933387, "person_id"=>3684932}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e06e78 @attributes={"date"=>Sat, 11 Jun 2011, "description"=>"TS: Trish needs to call Feynman about not getting her email", "hours"=>0.116667, "id"=>39932065, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e06518 @attributes={"date"=>Fri, 10 Jun 2011, "description"=>"TS: GOC Reg issue...disappeared", "hours"=>0.2, "id"=>39928609, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e05be0 @attributes={"date"=>Wed, 08 Jun 2011, "description"=>"Triaging and marking acceptable risk on several vulnerabilities, upgrading GC wordpress to 3.1.3", "hours"=>0.6, "id"=>39798615, "person_id"=>3684932}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e052d0 @attributes={"date"=>Tue, 07 Jun 2011, "description"=>"TS: Searching for Backorders", "hours"=>0.0833333, "id"=>39928610, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e0495c @attributes={"date"=>Thu, 02 Jun 2011, "description"=>"PM: working on the todo list, killing things that are moot.", "hours"=>0.25, "id"=>39559082, "person_id"=>3684932}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e0404c @attributes={"date"=>Thu, 02 Jun 2011, "description"=>"TS: No TR coffee listing sans Review", "hours"=>0.233333, "id"=>39552207, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e0382c @attributes={"date"=>Thu, 02 Jun 2011, "description"=>"TC: Research into why this is not showing. Comment to that effect.", "hours"=>1.2, "id"=>39545277, "person_id"=>3684932}, @prefix_options={}>]
+D, [2011-06-16T14:33:45.521941 #69057] DEBUG -- : TOTAL_TIME: 5.3333263
+D, [2011-06-16T14:33:45.522211 #69057] DEBUG -- : ANNOUNCE: 
+<h2>IMPORTANT NOTICE:</h2>As of June 16, 2011 11:33:44, total hours are at <b>5.33</b>. This is 13.33% of the current contract hours of <b>40</b>. Current burn rate is <span style="color: green;font-weight:bold;background-color: white">25.16%</span>. We need to do <b>15.86</b> hours to catch up.
+D, [2011-06-16T14:33:46.246748 #69057] DEBUG -- : #<Mechanize::Page
+ {url #<URI::HTTPS:0x1af42d0 URL:https://aisltd.basecamphq.com/login>}
+ {meta}
+ {title "Azimuth: Sign in"}
+ {iframes}
+ {frames}
+ {links
+  #<Mechanize::Page::Link
+   "I forgot my username or password"
+   "/amnesia/forgot_password">}
+ {forms
+  #<Mechanize::Form
+   {name nil}
+   {method "POST"}
+   {action "https://launchpad.37signals.com/authenticate"}
+   {fields
+    #<Mechanize::Form::Hidden:0x1ae8930
+     @name="authenticity_token",
+     @node=
+      #(Element:0xd744e8 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd72cba { name = "name", value = "authenticity_token" }),
+          #(Attr:0xd72cb0 { name = "type", value = "hidden" }),
+          #(Attr:0xd72ca6 {
+            name = "value",
+            value = "fd3AX9kzXoBiERqMwmilynNnZ3JVsSlhgDrHNllpnis="
+            })]
+        }),
+     @value="fd3AX9kzXoBiERqMwmilynNnZ3JVsSlhgDrHNllpnis=">
+    #<Mechanize::Form::Hidden:0x1ae87dc
+     @name="product",
+     @node=
+      #(Element:0xd7443e {
+        name = "input",
+        attributes = [
+          #(Attr:0xd71842 { name = "id", value = "product" }),
+          #(Attr:0xd71838 { name = "name", value = "product" }),
+          #(Attr:0xd7182e { name = "type", value = "hidden" }),
+          #(Attr:0xd71824 { name = "value", value = "basecamp" })]
+        }),
+     @value="basecamp">
+    #<Mechanize::Form::Hidden:0x1ae869c
+     @name="subdomain",
+     @node=
+      #(Element:0xd7439e {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6fff6 { name = "id", value = "subdomain" }),
+          #(Attr:0xd6ffec { name = "name", value = "subdomain" }),
+          #(Attr:0xd6ffe2 { name = "type", value = "hidden" }),
+          #(Attr:0xd6ffd8 { name = "value", value = "aisltd" })]
+        }),
+     @value="aisltd">
+    #<Mechanize::Form::Text:0x1ae8570
+     @name="username",
+     @node=
+      #(Element:0xd74308 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6e8c2 { name = "autocapitalize", value = "off" }),
+          #(Attr:0xd6e8b8 { name = "autocorrect", value = "off" }),
+          #(Attr:0xd6e8ae { name = "id", value = "username" }),
+          #(Attr:0xd6e8a4 { name = "name", value = "username" }),
+          #(Attr:0xd6e89a { name = "type", value = "text" })]
+        }),
+     @value="">
+    #<Mechanize::Form::Field:0x1ae8430
+     @name="password",
+     @node=
+      #(Element:0xd74268 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6c932 { name = "id", value = "password" }),
+          #(Attr:0xd6c928 { name = "name", value = "password" }),
+          #(Attr:0xd6c91e { name = "type", value = "password" })]
+        }),
+     @value="">}
+   {radiobuttons}
+   {checkboxes
+    #<Mechanize::Form::CheckBox:0x1ae8304
+     @checked=false,
+     @name="remember_me",
+     @value="1">}
+   {file_uploads}
+   {buttons
+    #<Mechanize::Form::Submit:0x1ae8174
+     @name="commit",
+     @node=
+      #(Element:0xd7410a {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6aa60 { name = "class", value = "button" }),
+          #(Attr:0xd6aa56 { name = "name", value = "commit" }),
+          #(Attr:0xd6aa4c { name = "type", value = "submit" }),
+          #(Attr:0xd6aa42 { name = "value", value = "Sign in" })]
+        }),
+     @value="Sign in">}>}>
+
+D, [2011-06-16T14:33:46.247030 #69057] DEBUG -- : #<Mechanize::Form
+ {name nil}
+ {method "POST"}
+ {action "https://launchpad.37signals.com/authenticate"}
+ {fields
+  #<Mechanize::Form::Hidden:0x1ae8930
+   @name="authenticity_token",
+   @node=
+    #(Element:0xd744e8 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd72cba { name = "name", value = "authenticity_token" }),
+        #(Attr:0xd72cb0 { name = "type", value = "hidden" }),
+        #(Attr:0xd72ca6 {
+          name = "value",
+          value = "fd3AX9kzXoBiERqMwmilynNnZ3JVsSlhgDrHNllpnis="
+          })]
+      }),
+   @value="fd3AX9kzXoBiERqMwmilynNnZ3JVsSlhgDrHNllpnis=">
+  #<Mechanize::Form::Hidden:0x1ae87dc
+   @name="product",
+   @node=
+    #(Element:0xd7443e {
+      name = "input",
+      attributes = [
+        #(Attr:0xd71842 { name = "id", value = "product" }),
+        #(Attr:0xd71838 { name = "name", value = "product" }),
+        #(Attr:0xd7182e { name = "type", value = "hidden" }),
+        #(Attr:0xd71824 { name = "value", value = "basecamp" })]
+      }),
+   @value="basecamp">
+  #<Mechanize::Form::Hidden:0x1ae869c
+   @name="subdomain",
+   @node=
+    #(Element:0xd7439e {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6fff6 { name = "id", value = "subdomain" }),
+        #(Attr:0xd6ffec { name = "name", value = "subdomain" }),
+        #(Attr:0xd6ffe2 { name = "type", value = "hidden" }),
+        #(Attr:0xd6ffd8 { name = "value", value = "aisltd" })]
+      }),
+   @value="aisltd">
+  #<Mechanize::Form::Text:0x1ae8570
+   @name="username",
+   @node=
+    #(Element:0xd74308 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6e8c2 { name = "autocapitalize", value = "off" }),
+        #(Attr:0xd6e8b8 { name = "autocorrect", value = "off" }),
+        #(Attr:0xd6e8ae { name = "id", value = "username" }),
+        #(Attr:0xd6e8a4 { name = "name", value = "username" }),
+        #(Attr:0xd6e89a { name = "type", value = "text" })]
+      }),
+   @value="">
+  #<Mechanize::Form::Field:0x1ae8430
+   @name="password",
+   @node=
+    #(Element:0xd74268 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6c932 { name = "id", value = "password" }),
+        #(Attr:0xd6c928 { name = "name", value = "password" }),
+        #(Attr:0xd6c91e { name = "type", value = "password" })]
+      }),
+   @value="">}
+ {radiobuttons}
+ {checkboxes
+  #<Mechanize::Form::CheckBox:0x1ae8304
+   @checked=false,
+   @name="remember_me",
+   @value="1">}
+ {file_uploads}
+ {buttons
+  #<Mechanize::Form::Submit:0x1ae8174
+   @name="commit",
+   @node=
+    #(Element:0xd7410a {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6aa60 { name = "class", value = "button" }),
+        #(Attr:0xd6aa56 { name = "name", value = "commit" }),
+        #(Attr:0xd6aa4c { name = "type", value = "submit" }),
+        #(Attr:0xd6aa42 { name = "value", value = "Sign in" })]
+      }),
+   @value="Sign in">}>
+
+D, [2011-06-16T14:33:50.336814 #69057] DEBUG -- : #<Mechanize::Page
+ {url
+  #<URI::HTTPS:0x1a9be78 URL:https://aisltd.basecamphq.com/projects/3146702/edit>}
+ {meta}
+ {title "GCOA Development & Support > Project Settings"}
+ {iframes}
+ {frames}
+ {links
+  #<Mechanize::Page::Link "Launchpad" "/id/identities/81505/goto">
+  #<Mechanize::Page::Link "Basecamp Projects" "/id/users/3413038/goto">
+  #<Mechanize::Page::Link "Highrise Contacts" "/id/users/8554773/goto">
+  #<Mechanize::Page::Link "Backpack Organizer" "/id/users/8554778/goto">
+  #<Mechanize::Page::Link "Campfire Chat" "/id/users/8554783/goto">
+  #<Mechanize::Page::Link
+   "How to enable JavaScript in your browser"
+   "http://www.google.com/support/bin/answer.py?answer=23852">
+  #<Mechanize::Page::Link "try loading this page again" "">
+  #<Mechanize::Page::Link
+   "Back to Dashboard"
+   "https://aisltd.basecamphq.com/clients">
+  #<Mechanize::Page::Link
+   "Switch to a different project"
+   "/projects/3146702/edit">
+  #<Mechanize::Page::Link
+   "Azimuth Business Administration Azimuth Internet Services, Ltd"
+   "/projects/3154787/project">
+  #<Mechanize::Page::Link
+   "Azimuth Project Management Azimuth Internet Services, Ltd"
+   "/projects/3146838/project">
+  #<Mechanize::Page::Link
+   "Azimuth Research & Development Azimuth Internet Services, Ltd"
+   "/projects/3154393/project">
+  #<Mechanize::Page::Link
+   "Azimuth Sales & Marketing Azimuth Internet Services, Ltd"
+   "/projects/3154382/project">
+  #<Mechanize::Page::Link
+   "Azimuth Systems Administration Azimuth Internet Services, Ltd"
+   "/projects/3146794/project">
+  #<Mechanize::Page::Link
+   "FestivalFinds.net Azimuth Internet Services, Ltd"
+   "/projects/7245835/project">
+  #<Mechanize::Page::Link
+   "Web Development & Support Curaderm Global"
+   "/projects/3440447/project">
+  #<Mechanize::Page::Link
+   "GCOA Development & Support Great Coffees of America"
+   "/projects/3146702/project">
+  #<Mechanize::Page::Link
+   "RTW Development & Support Road Town Wholesale"
+   "/projects/3852762/project">
+  #<Mechanize::Page::Link
+   "TCRI Development & Support  The Coffee Review, Inc."
+   "/projects/3154078/project">
+  #<Mechanize::Page::Link
+   "Project Settings"
+   "https://aisltd.basecamphq.com/projects/3146702-gcoa-development-support/edit">
+  #<Mechanize::Page::Link
+   "My info"
+   "/projects/3146702-gcoa-development-support/people/3684932/edit">
+  #<Mechanize::Page::Link "Sign out" "/logout">
+  #<Mechanize::Page::Link
+   "HELP"
+   "http://help.37signals.com/basecamp?e=Y2hyaXN0b3BoZXJAYXppbXV0aG9ubGluZS5jb20%3D&f=Q2hyaXN0b3BoZXIgTWF1amVhbg%3D%3D&n=Y21hdWplYW4%3D&u=aHR0cHM6Ly9haXNsdGQuYmFzZWNhbXBocS5jb20vcHJvamVjdHMvMzE0NjcwMi9lZGl0">
+  #<Mechanize::Page::Link "Print" "/projects/3146702/edit?print_mode=1">
+  #<Mechanize::Page::Link
+   "Overview"
+   "/projects/3146702-gcoa-development-support/log">
+  #<Mechanize::Page::Link
+   "Messages"
+   "/projects/3146702-gcoa-development-support/posts">
+  #<Mechanize::Page::Link
+   "To-Dos"
+   "/projects/3146702-gcoa-development-support/todo_lists">
+  #<Mechanize::Page::Link
+   "Calendar"
+   "/projects/3146702-gcoa-development-support/milestones">
+  #<Mechanize::Page::Link
+   "Writeboards"
+   "/projects/3146702-gcoa-development-support/writeboards">
+  #<Mechanize::Page::Link
+   "Chat"
+   "/projects/3146702-gcoa-development-support/chat">
+  #<Mechanize::Page::Link
+   "Time"
+   "/projects/3146702-gcoa-development-support/time_entries">
+  #<Mechanize::Page::Link
+   "Files"
+   "/projects/3146702-gcoa-development-support/files">
+  #<Mechanize::Page::Link
+   "Search"
+   "/projects/3146702-gcoa-development-support/search">
+  #<Mechanize::Page::Link
+   "People & Permissions"
+   "/projects/3146702-gcoa-development-support/companies">
+  #<Mechanize::Page::Link
+   "Basecamp"
+   "http://basecamphq.com?source=bcappfooter">
+  #<Mechanize::Page::Link
+   "Yes, I understand — delete this project"
+   "/projects/3146702-gcoa-development-support/project/delete_project">}
+ {forms
+  #<Mechanize::Form
+   {name nil}
+   {method "POST"}
+   {action "/projects/3146702"}
+   {fields
+    #<Mechanize::Form::Hidden:0x1a8149c
+     @name="authenticity_token",
+     @node=
+      #(Element:0xd40a9e {
+        name = "input",
+        attributes = [
+          #(Attr:0xd3ed2a { name = "name", value = "authenticity_token" }),
+          #(Attr:0xd3ed20 { name = "type", value = "hidden" }),
+          #(Attr:0xd3ed16 {
+            name = "value",
+            value = "fd3AX9kzXoBiERqMwmilynNnZ3JVsSlhgDrHNllpnis="
+            })]
+        }),
+     @value="fd3AX9kzXoBiERqMwmilynNnZ3JVsSlhgDrHNllpnis=">
+    #<Mechanize::Form::Text:0x1a812d0
+     @name="settings[project][name]",
+     @node=
+      #(Element:0xd409b8 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd3d8a8 { name = "type", value = "text" }),
+          #(Attr:0xd3d89e { name = "size", value = "40" }),
+          #(Attr:0xd3d894 {
+            name = "name",
+            value = "settings[project][name]"
+            }),
+          #(Attr:0xd3d88a { name = "id", value = "projectName" }),
+          #(Attr:0xd3d880 {
+            name = "value",
+            value = "GCOA Development & Support"
+            })]
+        }),
+     @value="GCOA Development & Support">
+    #<Mechanize::Form::Hidden:0x1a81104
+     @name="settings[project][show_announcement]",
+     @node=
+      #(Element:0xd4090e {
+        name = "input",
+        attributes = [
+          #(Attr:0xd3bb02 {
+            name = "id",
+            value = "settings_project_show_announcement"
+            }),
+          #(Attr:0xd3baf8 {
+            name = "name",
+            value = "settings[project][show_announcement]"
+            }),
+          #(Attr:0xd3baee { name = "type", value = "hidden" }),
+          #(Attr:0xd3bae4 { name = "value", value = "0" })]
+        }),
+     @value="0">
+    #<Mechanize::Form::Field:0x1a80600
+     @name="settings[project][announcement]",
+     @node=
+      #(Element:0xd40332 {
+        name = "textarea",
+        attributes = [
+          #(Attr:0xd3a388 {
+            name = "id",
+            value = "settings_project_announcement"
+            }),
+          #(Attr:0xd3a37e {
+            name = "name",
+            value = "settings[project][announcement]"
+            }),
+          #(Attr:0xd3a374 { name = "rows", value = "5" }),
+          #(Attr:0xd3a36a { name = "style", value = "width: 100%" })],
+        children = [
+          #(Text "\n<h2>IMPORTANT NOTICE:</h2>As of June 2, 2011 12:00:24, total hours are at <b>3.4</b> (including 3.4 rollover hours). This is 8.50% of the current contract hours of <b>40</b>. Current burn rate is <span style=\"color: yellow;font-weight:bold;background-color: white\">142.30%</span>. We are <b>1.01</b> hours ahead.")]
+        }),
+     @value=
+      "\n<h2>IMPORTANT NOTICE:</h2>As of June 2, 2011 12:00:24, total hours are at <b>3.4</b> (including 3.4 rollover hours). This is 8.50% of the current contract hours of <b>40</b>. Current burn rate is <span style=\"color: yellow;font-weight:bold;background-color: white\">142.30%</span>. We are <b>1.01</b> hours ahead.">
+    #<Mechanize::Form::SelectList:0x1a80164
+     @name="settings[project][start_page]",
+     @node=
+      #(Element:0xd400da {
+        name = "select",
+        attributes = [
+          #(Attr:0xd38754 {
+            name = "name",
+            value = "settings[project][start_page]"
+            })],
+        children = [
+          #(Element:0xd3fd60 {
+            name = "option",
+            attributes = [
+              #(Attr:0xd37d9a { name = "value", value = "log" }),
+              #(Attr:0xd37d90 { name = "selected", value = "selected" })],
+            children = [ #(Text "Overview")]
+            }),
+          #(Element:0xd3fd10 {
+            name = "option",
+            attributes = [ #(Attr:0xd37020 { name = "value", value = "all" })],
+            children = [ #(Text "All Messages")]
+            }),
+          #(Element:0xd3fcc0 {
+            name = "option",
+            attributes = [
+              #(Attr:0xd36698 { name = "value", value = "todos" })],
+            children = [ #(Text "To-Do's")]
+            }),
+          #(Element:0xd3fc70 {
+            name = "option",
+            attributes = [
+              #(Attr:0xd35b30 { name = "value", value = "milestones" })],
+            children = [ #(Text "Calendar")]
+            }),
+          #(Element:0xd3fbe4 {
+            name = "option",
+            attributes = [
+              #(Attr:0xd34faa { name = "value", value = "files" })],
+            children = [ #(Text "Files")]
+            })]
+        }),
+     @options=[log, all, todos, milestones, files],
+     @value=[]>
+    #<Mechanize::Form::SelectList:0x1a7f638
+     @name="settings[project][company_id]",
+     @node=
+      #(Element:0xd3fb44 {
+        name = "select",
+        attributes = [
+          #(Attr:0xd338d0 {
+            name = "id",
+            value = "settings_project_company_id"
+            }),
+          #(Attr:0xd338c6 {
+            name = "name",
+            value = "settings[project][company_id]"
+            })],
+        children = [
+          #(Element:0xd3f9aa {
+            name = "option",
+            attributes = [
+              #(Attr:0xd3298a { name = "value", value = "1345970" })],
+            children = [ #(Text "Azimuth Internet Services, Ltd")]
+            }),
+          #(Element:0xd3f95a {
+            name = "option",
+            attributes = [
+              #(Attr:0xd31fbc { name = "value", value = "1345982" }),
+              #(Attr:0xd31fb2 { name = "selected", value = "selected" })],
+            children = [ #(Text "Great Coffees of America")]
+            })]
+        }),
+     @options=[1345970, 1345982],
+     @value=[]>}
+   {radiobuttons
+    #<Mechanize::Form::RadioButton:0x1a80e84
+     @checked=true,
+     @name="settings[project][status]",
+     @value="active">
+    #<Mechanize::Form::RadioButton:0x1a80d1c
+     @checked=false,
+     @name="settings[project][status]",
+     @value="on_hold">
+    #<Mechanize::Form::RadioButton:0x1a80b3c
+     @checked=false,
+     @name="settings[project][status]",
+     @value="archived">}
+   {checkboxes
+    #<Mechanize::Form::CheckBox:0x1a80fec
+     @checked=true,
+     @name="settings[project][show_announcement]",
+     @value="1">}
+   {file_uploads}
+   {buttons
+    #<Mechanize::Form::Submit:0x1a80998
+     @name=nil,
+     @node=
+      #(Element:0xd40512 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd2ee3e { name = "type", value = "submit" }),
+          #(Attr:0xd2ee34 { name = "value", value = "Save changes" }),
+          #(Attr:0xd2ee2a {
+            name = "onclick",
+            value = "return validateField('projectName', 'The project must have a name');"
+            })]
+        }),
+     @value="Save changes">}>}>
+
+D, [2011-06-16T14:33:50.337051 #69057] DEBUG -- : nil
+D, [2011-06-16T14:34:42.779673 #69090] DEBUG -- : {"url"=>"aisltd.basecamphq.com", "user"=>"cmaujean", "password"=>"francoDominus", "project_id"=>"3146702", "contracthours"=>40, "rolloverhours"=>0, "additionalhours"=>0, "hoursgratis"=>0, "timezoneoffset"=>-3, "logger"=>{"file"=>"log/bcproj.log", "level"=>"Logger::DEBUG"}, "colors"=>{"closelow"=>{"foreground"=>"yellow", "background"=>"white"}, "midlow"=>{"foreground"=>"orange", "background"=>"white"}, "farlow"=>{"foreground"=>"red", "background"=>"white"}, "ontrack"=>{"foreground"=>"green", "background"=>"white"}, "closehigh"=>{"foreground"=>"yellow", "background"=>"white"}, "midhigh"=>{"foreground"=>"orange", "background"=>"white"}, "farhigh"=>{"foreground"=>"red", "background"=>"white"}}}
+D, [2011-06-16T14:34:43.157733 #69090] DEBUG -- : TODAY: 2011-06-16T11:34:43-10:00
+D, [2011-06-16T14:34:43.157811 #69090] DEBUG -- : BCTODAY: 20110616
+D, [2011-06-16T14:34:43.157857 #69090] DEBUG -- : BCFROM: 20110601
+D, [2011-06-16T14:34:43.157896 #69090] DEBUG -- : DAYSINMONTH: 30
+D, [2011-06-16T14:34:43.157939 #69090] DEBUG -- : DAYSSINCEBEGIN: 85855197317/5400000000
+D, [2011-06-16T14:34:43.954208 #69090] DEBUG -- : ENTRIES: [#<Basecamp::TimeEntry:0x1e090d8 @attributes={"date"=>Mon, 13 Jun 2011, "description"=>"CC: Explanation to Ron", "hours"=>0.25, "id"=>39987547, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e08700 @attributes={"date"=>Sun, 12 Jun 2011, "description"=>"SA: New Marcia IP (plus respooling mail, misc emails)", "hours"=>0.183333, "id"=>39941619, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e07db4 @attributes={"date"=>Sat, 11 Jun 2011, "description"=>"SA: Email Issues; undelivered folder was clogged; mail.feynman.net was unresponsive", "hours"=>1.18333, "id"=>39941629, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e07454 @attributes={"date"=>Sat, 11 Jun 2011, "description"=>"investigation of mail issues. turned off sqlite access for the time being", "hours"=>1.03333, "id"=>39933387, "person_id"=>3684932}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e06b30 @attributes={"date"=>Sat, 11 Jun 2011, "description"=>"TS: Trish needs to call Feynman about not getting her email", "hours"=>0.116667, "id"=>39932065, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e061a8 @attributes={"date"=>Fri, 10 Jun 2011, "description"=>"TS: GOC Reg issue...disappeared", "hours"=>0.2, "id"=>39928609, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e058ac @attributes={"date"=>Wed, 08 Jun 2011, "description"=>"Triaging and marking acceptable risk on several vulnerabilities, upgrading GC wordpress to 3.1.3", "hours"=>0.6, "id"=>39798615, "person_id"=>3684932}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e04f24 @attributes={"date"=>Tue, 07 Jun 2011, "description"=>"TS: Searching for Backorders", "hours"=>0.0833333, "id"=>39928610, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e04614 @attributes={"date"=>Thu, 02 Jun 2011, "description"=>"PM: working on the todo list, killing things that are moot.", "hours"=>0.25, "id"=>39559082, "person_id"=>3684932}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e03d54 @attributes={"date"=>Thu, 02 Jun 2011, "description"=>"TS: No TR coffee listing sans Review", "hours"=>0.233333, "id"=>39552207, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e0350c @attributes={"date"=>Thu, 02 Jun 2011, "description"=>"TC: Research into why this is not showing. Comment to that effect.", "hours"=>1.2, "id"=>39545277, "person_id"=>3684932}, @prefix_options={}>]
+D, [2011-06-16T14:34:43.954416 #69090] DEBUG -- : TOTAL_TIME: 5.3333263
+D, [2011-06-16T14:34:43.954686 #69090] DEBUG -- : ANNOUNCE: 
+<h2>IMPORTANT NOTICE:</h2>As of June 16, 2011 11:34:43, total hours are at <b>5.33</b>. This is 13.33% of the current contract hours of <b>40</b>. Current burn rate is <span style="color: green;font-weight:bold;background-color: white">25.16%</span>. We need to do <b>15.87</b> hours to catch up.
+D, [2011-06-16T14:34:44.581713 #69090] DEBUG -- : #<Mechanize::Page
+ {url #<URI::HTTPS:0x1af3fec URL:https://aisltd.basecamphq.com/login>}
+ {meta}
+ {title "Azimuth: Sign in"}
+ {iframes}
+ {frames}
+ {links
+  #<Mechanize::Page::Link
+   "I forgot my username or password"
+   "/amnesia/forgot_password">}
+ {forms
+  #<Mechanize::Form
+   {name nil}
+   {method "POST"}
+   {action "https://launchpad.37signals.com/authenticate"}
+   {fields
+    #<Mechanize::Form::Hidden:0x1ae8674
+     @name="authenticity_token",
+     @node=
+      #(Element:0xd7438a {
+        name = "input",
+        attributes = [
+          #(Attr:0xd72b3e { name = "name", value = "authenticity_token" }),
+          #(Attr:0xd72b34 { name = "type", value = "hidden" }),
+          #(Attr:0xd72b2a {
+            name = "value",
+            value = "ds4WRFlkv27ShK+9RNcO+64qH8kh5IMgKy1M/nuoG7A="
+            })]
+        }),
+     @value="ds4WRFlkv27ShK+9RNcO+64qH8kh5IMgKy1M/nuoG7A=">
+    #<Mechanize::Form::Hidden:0x1ae8520
+     @name="product",
+     @node=
+      #(Element:0xd742e0 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd716e4 { name = "id", value = "product" }),
+          #(Attr:0xd716da { name = "name", value = "product" }),
+          #(Attr:0xd716d0 { name = "type", value = "hidden" }),
+          #(Attr:0xd716c6 { name = "value", value = "basecamp" })]
+        }),
+     @value="basecamp">
+    #<Mechanize::Form::Hidden:0x1ae83f4
+     @name="subdomain",
+     @node=
+      #(Element:0xd7424a {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6fea2 { name = "id", value = "subdomain" }),
+          #(Attr:0xd6fe98 { name = "name", value = "subdomain" }),
+          #(Attr:0xd6fe8e { name = "type", value = "hidden" }),
+          #(Attr:0xd6fe84 { name = "value", value = "aisltd" })]
+        }),
+     @value="aisltd">
+    #<Mechanize::Form::Text:0x1ae82b4
+     @name="username",
+     @node=
+      #(Element:0xd741b4 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6e728 { name = "autocapitalize", value = "off" }),
+          #(Attr:0xd6e71e { name = "autocorrect", value = "off" }),
+          #(Attr:0xd6e714 { name = "id", value = "username" }),
+          #(Attr:0xd6e70a { name = "name", value = "username" }),
+          #(Attr:0xd6e700 { name = "type", value = "text" })]
+        }),
+     @value="">
+    #<Mechanize::Form::Field:0x1ae814c
+     @name="password",
+     @node=
+      #(Element:0xd740f6 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6c798 { name = "id", value = "password" }),
+          #(Attr:0xd6c78e { name = "name", value = "password" }),
+          #(Attr:0xd6c784 { name = "type", value = "password" })]
+        }),
+     @value="">}
+   {radiobuttons}
+   {checkboxes
+    #<Mechanize::Form::CheckBox:0x1ae800c
+     @checked=false,
+     @name="remember_me",
+     @value="1">}
+   {file_uploads}
+   {buttons
+    #<Mechanize::Form::Submit:0x1ae7eb8
+     @name="commit",
+     @node=
+      #(Element:0xd73f98 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6a8b2 { name = "class", value = "button" }),
+          #(Attr:0xd6a894 { name = "name", value = "commit" }),
+          #(Attr:0xd6a88a { name = "type", value = "submit" }),
+          #(Attr:0xd6a880 { name = "value", value = "Sign in" })]
+        }),
+     @value="Sign in">}>}>
+
+D, [2011-06-16T14:34:44.581843 #69090] DEBUG -- : #<Mechanize::Form
+ {name nil}
+ {method "POST"}
+ {action "https://launchpad.37signals.com/authenticate"}
+ {fields
+  #<Mechanize::Form::Hidden:0x1ae8674
+   @name="authenticity_token",
+   @node=
+    #(Element:0xd7438a {
+      name = "input",
+      attributes = [
+        #(Attr:0xd72b3e { name = "name", value = "authenticity_token" }),
+        #(Attr:0xd72b34 { name = "type", value = "hidden" }),
+        #(Attr:0xd72b2a {
+          name = "value",
+          value = "ds4WRFlkv27ShK+9RNcO+64qH8kh5IMgKy1M/nuoG7A="
+          })]
+      }),
+   @value="ds4WRFlkv27ShK+9RNcO+64qH8kh5IMgKy1M/nuoG7A=">
+  #<Mechanize::Form::Hidden:0x1ae8520
+   @name="product",
+   @node=
+    #(Element:0xd742e0 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd716e4 { name = "id", value = "product" }),
+        #(Attr:0xd716da { name = "name", value = "product" }),
+        #(Attr:0xd716d0 { name = "type", value = "hidden" }),
+        #(Attr:0xd716c6 { name = "value", value = "basecamp" })]
+      }),
+   @value="basecamp">
+  #<Mechanize::Form::Hidden:0x1ae83f4
+   @name="subdomain",
+   @node=
+    #(Element:0xd7424a {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6fea2 { name = "id", value = "subdomain" }),
+        #(Attr:0xd6fe98 { name = "name", value = "subdomain" }),
+        #(Attr:0xd6fe8e { name = "type", value = "hidden" }),
+        #(Attr:0xd6fe84 { name = "value", value = "aisltd" })]
+      }),
+   @value="aisltd">
+  #<Mechanize::Form::Text:0x1ae82b4
+   @name="username",
+   @node=
+    #(Element:0xd741b4 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6e728 { name = "autocapitalize", value = "off" }),
+        #(Attr:0xd6e71e { name = "autocorrect", value = "off" }),
+        #(Attr:0xd6e714 { name = "id", value = "username" }),
+        #(Attr:0xd6e70a { name = "name", value = "username" }),
+        #(Attr:0xd6e700 { name = "type", value = "text" })]
+      }),
+   @value="">
+  #<Mechanize::Form::Field:0x1ae814c
+   @name="password",
+   @node=
+    #(Element:0xd740f6 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6c798 { name = "id", value = "password" }),
+        #(Attr:0xd6c78e { name = "name", value = "password" }),
+        #(Attr:0xd6c784 { name = "type", value = "password" })]
+      }),
+   @value="">}
+ {radiobuttons}
+ {checkboxes
+  #<Mechanize::Form::CheckBox:0x1ae800c
+   @checked=false,
+   @name="remember_me",
+   @value="1">}
+ {file_uploads}
+ {buttons
+  #<Mechanize::Form::Submit:0x1ae7eb8
+   @name="commit",
+   @node=
+    #(Element:0xd73f98 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6a8b2 { name = "class", value = "button" }),
+        #(Attr:0xd6a894 { name = "name", value = "commit" }),
+        #(Attr:0xd6a88a { name = "type", value = "submit" }),
+        #(Attr:0xd6a880 { name = "value", value = "Sign in" })]
+      }),
+   @value="Sign in">}>
+
+D, [2011-06-16T14:34:47.388103 #69090] DEBUG -- : #<Mechanize::Page
+ {url
+  #<URI::HTTPS:0x1a9b6e4 URL:https://aisltd.basecamphq.com/projects/3146702/edit>}
+ {meta}
+ {title "GCOA Development & Support > Project Settings"}
+ {iframes}
+ {frames}
+ {links
+  #<Mechanize::Page::Link "Launchpad" "/id/identities/81505/goto">
+  #<Mechanize::Page::Link "Basecamp Projects" "/id/users/3413038/goto">
+  #<Mechanize::Page::Link "Highrise Contacts" "/id/users/8554773/goto">
+  #<Mechanize::Page::Link "Backpack Organizer" "/id/users/8554778/goto">
+  #<Mechanize::Page::Link "Campfire Chat" "/id/users/8554783/goto">
+  #<Mechanize::Page::Link
+   "How to enable JavaScript in your browser"
+   "http://www.google.com/support/bin/answer.py?answer=23852">
+  #<Mechanize::Page::Link "try loading this page again" "">
+  #<Mechanize::Page::Link
+   "Back to Dashboard"
+   "https://aisltd.basecamphq.com/clients">
+  #<Mechanize::Page::Link
+   "Switch to a different project"
+   "/projects/3146702/edit">
+  #<Mechanize::Page::Link
+   "Azimuth Business Administration Azimuth Internet Services, Ltd"
+   "/projects/3154787/project">
+  #<Mechanize::Page::Link
+   "Azimuth Project Management Azimuth Internet Services, Ltd"
+   "/projects/3146838/project">
+  #<Mechanize::Page::Link
+   "Azimuth Research & Development Azimuth Internet Services, Ltd"
+   "/projects/3154393/project">
+  #<Mechanize::Page::Link
+   "Azimuth Sales & Marketing Azimuth Internet Services, Ltd"
+   "/projects/3154382/project">
+  #<Mechanize::Page::Link
+   "Azimuth Systems Administration Azimuth Internet Services, Ltd"
+   "/projects/3146794/project">
+  #<Mechanize::Page::Link
+   "FestivalFinds.net Azimuth Internet Services, Ltd"
+   "/projects/7245835/project">
+  #<Mechanize::Page::Link
+   "Web Development & Support Curaderm Global"
+   "/projects/3440447/project">
+  #<Mechanize::Page::Link
+   "GCOA Development & Support Great Coffees of America"
+   "/projects/3146702/project">
+  #<Mechanize::Page::Link
+   "RTW Development & Support Road Town Wholesale"
+   "/projects/3852762/project">
+  #<Mechanize::Page::Link
+   "TCRI Development & Support  The Coffee Review, Inc."
+   "/projects/3154078/project">
+  #<Mechanize::Page::Link
+   "Project Settings"
+   "https://aisltd.basecamphq.com/projects/3146702-gcoa-development-support/edit">
+  #<Mechanize::Page::Link
+   "My info"
+   "/projects/3146702-gcoa-development-support/people/3684932/edit">
+  #<Mechanize::Page::Link "Sign out" "/logout">
+  #<Mechanize::Page::Link
+   "HELP"
+   "http://help.37signals.com/basecamp?e=Y2hyaXN0b3BoZXJAYXppbXV0aG9ubGluZS5jb20%3D&f=Q2hyaXN0b3BoZXIgTWF1amVhbg%3D%3D&n=Y21hdWplYW4%3D&u=aHR0cHM6Ly9haXNsdGQuYmFzZWNhbXBocS5jb20vcHJvamVjdHMvMzE0NjcwMi9lZGl0">
+  #<Mechanize::Page::Link "Print" "/projects/3146702/edit?print_mode=1">
+  #<Mechanize::Page::Link
+   "Overview"
+   "/projects/3146702-gcoa-development-support/log">
+  #<Mechanize::Page::Link
+   "Messages"
+   "/projects/3146702-gcoa-development-support/posts">
+  #<Mechanize::Page::Link
+   "To-Dos"
+   "/projects/3146702-gcoa-development-support/todo_lists">
+  #<Mechanize::Page::Link
+   "Calendar"
+   "/projects/3146702-gcoa-development-support/milestones">
+  #<Mechanize::Page::Link
+   "Writeboards"
+   "/projects/3146702-gcoa-development-support/writeboards">
+  #<Mechanize::Page::Link
+   "Chat"
+   "/projects/3146702-gcoa-development-support/chat">
+  #<Mechanize::Page::Link
+   "Time"
+   "/projects/3146702-gcoa-development-support/time_entries">
+  #<Mechanize::Page::Link
+   "Files"
+   "/projects/3146702-gcoa-development-support/files">
+  #<Mechanize::Page::Link
+   "Search"
+   "/projects/3146702-gcoa-development-support/search">
+  #<Mechanize::Page::Link
+   "People & Permissions"
+   "/projects/3146702-gcoa-development-support/companies">
+  #<Mechanize::Page::Link
+   "Basecamp"
+   "http://basecamphq.com?source=bcappfooter">
+  #<Mechanize::Page::Link
+   "Yes, I understand — delete this project"
+   "/projects/3146702-gcoa-development-support/project/delete_project">}
+ {forms
+  #<Mechanize::Form
+   {name nil}
+   {method "POST"}
+   {action "/projects/3146702"}
+   {fields
+    #<Mechanize::Form::Hidden:0x1a80c2c
+     @name="authenticity_token",
+     @node=
+      #(Element:0xd4068e {
+        name = "input",
+        attributes = [
+          #(Attr:0xd3e956 { name = "name", value = "authenticity_token" }),
+          #(Attr:0xd3e94c { name = "type", value = "hidden" }),
+          #(Attr:0xd3e942 {
+            name = "value",
+            value = "ds4WRFlkv27ShK+9RNcO+64qH8kh5IMgKy1M/nuoG7A="
+            })]
+        }),
+     @value="ds4WRFlkv27ShK+9RNcO+64qH8kh5IMgKy1M/nuoG7A=">
+    #<Mechanize::Form::Text:0x1a80a88
+     @name="settings[project][name]",
+     @node=
+      #(Element:0xd405a8 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd3d4f2 { name = "type", value = "text" }),
+          #(Attr:0xd3d4e8 { name = "size", value = "40" }),
+          #(Attr:0xd3d4de {
+            name = "name",
+            value = "settings[project][name]"
+            }),
+          #(Attr:0xd3d4d4 { name = "id", value = "projectName" }),
+          #(Attr:0xd3d4ca {
+            name = "value",
+            value = "GCOA Development & Support"
+            })]
+        }),
+     @value="GCOA Development & Support">
+    #<Mechanize::Form::Hidden:0x1a8090c
+     @name="settings[project][show_announcement]",
+     @node=
+      #(Element:0xd404d6 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd3b774 {
+            name = "id",
+            value = "settings_project_show_announcement"
+            }),
+          #(Attr:0xd3b76a {
+            name = "name",
+            value = "settings[project][show_announcement]"
+            }),
+          #(Attr:0xd3b760 { name = "type", value = "hidden" }),
+          #(Attr:0xd3b756 { name = "value", value = "0" })]
+        }),
+     @value="0">
+    #<Mechanize::Form::Field:0x1a7fd7c
+     @name="settings[project][announcement]",
+     @node=
+      #(Element:0xd3fee6 {
+        name = "textarea",
+        attributes = [
+          #(Attr:0xd39ff0 {
+            name = "id",
+            value = "settings_project_announcement"
+            }),
+          #(Attr:0xd39fe6 {
+            name = "name",
+            value = "settings[project][announcement]"
+            }),
+          #(Attr:0xd39fdc { name = "rows", value = "5" }),
+          #(Attr:0xd39fd2 { name = "style", value = "width: 100%" })],
+        children = [
+          #(Text "\n<h2>IMPORTANT NOTICE:</h2>As of June 2, 2011 12:00:24, total hours are at <b>3.4</b> (including 3.4 rollover hours). This is 8.50% of the current contract hours of <b>40</b>. Current burn rate is <span style=\"color: yellow;font-weight:bold;background-color: white\">142.30%</span>. We are <b>1.01</b> hours ahead.")]
+        }),
+     @value=
+      "\n<h2>IMPORTANT NOTICE:</h2>As of June 2, 2011 12:00:24, total hours are at <b>3.4</b> (including 3.4 rollover hours). This is 8.50% of the current contract hours of <b>40</b>. Current burn rate is <span style=\"color: yellow;font-weight:bold;background-color: white\">142.30%</span>. We are <b>1.01</b> hours ahead.">
+    #<Mechanize::Form::SelectList:0x1a7f9e4
+     @name="settings[project][start_page]",
+     @node=
+      #(Element:0xd3fd1a {
+        name = "select",
+        attributes = [
+          #(Attr:0xd3834e {
+            name = "name",
+            value = "settings[project][start_page]"
+            })],
+        children = [
+          #(Element:0xd3f98c {
+            name = "option",
+            attributes = [
+              #(Attr:0xd379da { name = "value", value = "log" }),
+              #(Attr:0xd379d0 { name = "selected", value = "selected" })],
+            children = [ #(Text "Overview")]
+            }),
+          #(Element:0xd3f93c {
+            name = "option",
+            attributes = [ #(Attr:0xd36c88 { name = "value", value = "all" })],
+            children = [ #(Text "All Messages")]
+            }),
+          #(Element:0xd3f8ec {
+            name = "option",
+            attributes = [
+              #(Attr:0xd36224 { name = "value", value = "todos" })],
+            children = [ #(Text "To-Do's")]
+            }),
+          #(Element:0xd3f89c {
+            name = "option",
+            attributes = [
+              #(Attr:0xd356b2 { name = "value", value = "milestones" })],
+            children = [ #(Text "Calendar")]
+            }),
+          #(Element:0xd3f84c {
+            name = "option",
+            attributes = [
+              #(Attr:0xd34bfe { name = "value", value = "files" })],
+            children = [ #(Text "Files")]
+            })]
+        }),
+     @options=[log, all, todos, milestones, files],
+     @value=[]>
+    #<Mechanize::Form::SelectList:0x1a7ef1c
+     @name="settings[project][company_id]",
+     @node=
+      #(Element:0xd3f7b6 {
+        name = "select",
+        attributes = [
+          #(Attr:0xd33452 {
+            name = "id",
+            value = "settings_project_company_id"
+            }),
+          #(Attr:0xd33448 {
+            name = "name",
+            value = "settings[project][company_id]"
+            })],
+        children = [
+          #(Element:0xd3f61c {
+            name = "option",
+            attributes = [
+              #(Attr:0xd325b6 { name = "value", value = "1345970" })],
+            children = [ #(Text "Azimuth Internet Services, Ltd")]
+            }),
+          #(Element:0xd3f5cc {
+            name = "option",
+            attributes = [
+              #(Attr:0xd31bde { name = "value", value = "1345982" }),
+              #(Attr:0xd31bd4 { name = "selected", value = "selected" })],
+            children = [ #(Text "Great Coffees of America")]
+            })]
+        }),
+     @options=[1345970, 1345982],
+     @value=[]>}
+   {radiobuttons
+    #<Mechanize::Form::RadioButton:0x1a80678
+     @checked=true,
+     @name="settings[project][status]",
+     @value="active">
+    #<Mechanize::Form::RadioButton:0x1a80484
+     @checked=false,
+     @name="settings[project][status]",
+     @value="on_hold">
+    #<Mechanize::Form::RadioButton:0x1a802a4
+     @checked=false,
+     @name="settings[project][status]",
+     @value="archived">}
+   {checkboxes
+    #<Mechanize::Form::CheckBox:0x1a807e0
+     @checked=true,
+     @name="settings[project][show_announcement]",
+     @value="1">}
+   {file_uploads}
+   {buttons
+    #<Mechanize::Form::Submit:0x1a80150
+     @name=nil,
+     @node=
+      #(Element:0xd400e4 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd2ea92 { name = "type", value = "submit" }),
+          #(Attr:0xd2ea88 { name = "value", value = "Save changes" }),
+          #(Attr:0xd2ea7e {
+            name = "onclick",
+            value = "return validateField('projectName', 'The project must have a name');"
+            })]
+        }),
+     @value="Save changes">}>}>
+
+D, [2011-06-16T14:34:47.388343 #69090] DEBUG -- : nil
+D, [2011-06-16T14:39:11.649053 #69184] DEBUG -- : {"url"=>"aisltd.basecamphq.com", "user"=>"cmaujean", "password"=>"francoDominus", "project_id"=>"3146702", "contracthours"=>40, "rolloverhours"=>0, "additionalhours"=>0, "hoursgratis"=>0, "timezoneoffset"=>-3, "logger"=>{"file"=>"log/bcproj.log", "level"=>"Logger::DEBUG"}, "colors"=>{"closelow"=>{"foreground"=>"yellow", "background"=>"white"}, "midlow"=>{"foreground"=>"orange", "background"=>"white"}, "farlow"=>{"foreground"=>"red", "background"=>"white"}, "ontrack"=>{"foreground"=>"green", "background"=>"white"}, "closehigh"=>{"foreground"=>"yellow", "background"=>"white"}, "midhigh"=>{"foreground"=>"orange", "background"=>"white"}, "farhigh"=>{"foreground"=>"red", "background"=>"white"}}}
+D, [2011-06-16T14:39:12.104246 #69184] DEBUG -- : TODAY: 2011-06-16T11:39:12-10:00
+D, [2011-06-16T14:39:12.104323 #69184] DEBUG -- : BCTODAY: 20110616
+D, [2011-06-16T14:39:12.104362 #69184] DEBUG -- : BCFROM: 20110601
+D, [2011-06-16T14:39:12.104399 #69184] DEBUG -- : DAYSINMONTH: 30
+D, [2011-06-16T14:39:12.104442 #69184] DEBUG -- : DAYSSINCEBEGIN: 12721778737/800000000
+D, [2011-06-16T14:39:13.056147 #69184] DEBUG -- : ENTRIES: [#<Basecamp::TimeEntry:0x1e009d8 @attributes={"date"=>Thu, 16 Jun 2011, "description"=>nil, "hours"=>0.116667, "id"=>40165863, "person_id"=>3687878}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1e00014 @attributes={"date"=>Mon, 13 Jun 2011, "description"=>"CC: Explanation to Ron", "hours"=>0.25, "id"=>39987547, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1afc840 @attributes={"date"=>Sun, 12 Jun 2011, "description"=>"SA: New Marcia IP (plus respooling mail, misc emails)", "hours"=>0.183333, "id"=>39941619, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1afc070 @attributes={"date"=>Sat, 11 Jun 2011, "description"=>"SA: Email Issues; undelivered folder was clogged; mail.feynman.net was unresponsive", "hours"=>1.18333, "id"=>39941629, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1afb8a0 @attributes={"date"=>Sat, 11 Jun 2011, "description"=>"investigation of mail issues. turned off sqlite access for the time being", "hours"=>1.03333, "id"=>39933387, "person_id"=>3684932}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1afb06c @attributes={"date"=>Sat, 11 Jun 2011, "description"=>"TS: Trish needs to call Feynman about not getting her email", "hours"=>0.116667, "id"=>39932065, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1afa810 @attributes={"date"=>Fri, 10 Jun 2011, "description"=>"TS: GOC Reg issue...disappeared", "hours"=>0.2, "id"=>39928609, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1af9fc8 @attributes={"date"=>Wed, 08 Jun 2011, "description"=>"Triaging and marking acceptable risk on several vulnerabilities, upgrading GC wordpress to 3.1.3", "hours"=>0.6, "id"=>39798615, "person_id"=>3684932}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1af97e4 @attributes={"date"=>Tue, 07 Jun 2011, "description"=>"TS: Searching for Backorders", "hours"=>0.0833333, "id"=>39928610, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1af8fd8 @attributes={"date"=>Thu, 02 Jun 2011, "description"=>"PM: working on the todo list, killing things that are moot.", "hours"=>0.25, "id"=>39559082, "person_id"=>3684932}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1af86c8 @attributes={"date"=>Thu, 02 Jun 2011, "description"=>"TS: No TR coffee listing sans Review", "hours"=>0.233333, "id"=>39552207, "person_id"=>3684901}, @prefix_options={}>, #<Basecamp::TimeEntry:0x1af7ef8 @attributes={"date"=>Thu, 02 Jun 2011, "description"=>"TC: Research into why this is not showing. Comment to that effect.", "hours"=>1.2, "id"=>39545277, "person_id"=>3684932}, @prefix_options={}>]
+D, [2011-06-16T14:39:13.056363 #69184] DEBUG -- : TOTAL_TIME: 5.4499933
+D, [2011-06-16T14:39:13.056635 #69184] DEBUG -- : ANNOUNCE: 
+<h2>IMPORTANT NOTICE:</h2>As of June 16, 2011 11:39:12, total hours are at <b>5.45</b>. This is 13.62% of the current contract hours of <b>40</b>. Current burn rate is <span style="color: green;font-weight:bold;background-color: white">25.70%</span>. We need to do <b>15.75</b> hours to catch up.
+D, [2011-06-16T14:39:13.679867 #69184] DEBUG -- : #<Mechanize::Page
+ {url #<URI::HTTPS:0x1aea258 URL:https://aisltd.basecamphq.com/login>}
+ {meta}
+ {title "Azimuth: Sign in"}
+ {iframes}
+ {frames}
+ {links
+  #<Mechanize::Page::Link
+   "I forgot my username or password"
+   "/amnesia/forgot_password">}
+ {forms
+  #<Mechanize::Form
+   {name nil}
+   {method "POST"}
+   {action "https://launchpad.37signals.com/authenticate"}
+   {fields
+    #<Mechanize::Form::Hidden:0x1adf4ac
+     @name="authenticity_token",
+     @node=
+      #(Element:0xd6faa6 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6e278 { name = "name", value = "authenticity_token" }),
+          #(Attr:0xd6e26e { name = "type", value = "hidden" }),
+          #(Attr:0xd6e246 {
+            name = "value",
+            value = "F3Br+RCDfIn6x1ZIek1mcHFjujkTgOq4HIZpV2hvsQ4="
+            })]
+        }),
+     @value="F3Br+RCDfIn6x1ZIek1mcHFjujkTgOq4HIZpV2hvsQ4=">
+    #<Mechanize::Form::Hidden:0x1adf358
+     @name="product",
+     @node=
+      #(Element:0xd6f9fc {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6ca72 { name = "id", value = "product" }),
+          #(Attr:0xd6ca68 { name = "name", value = "product" }),
+          #(Attr:0xd6ca5e { name = "type", value = "hidden" }),
+          #(Attr:0xd6ca54 { name = "value", value = "basecamp" })]
+        }),
+     @value="basecamp">
+    #<Mechanize::Form::Hidden:0x1adf22c
+     @name="subdomain",
+     @node=
+      #(Element:0xd6f966 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd6afe2 { name = "id", value = "subdomain" }),
+          #(Attr:0xd6afd8 { name = "name", value = "subdomain" }),
+          #(Attr:0xd6afb0 { name = "type", value = "hidden" }),
+          #(Attr:0xd6afa6 { name = "value", value = "aisltd" })]
+        }),
+     @value="aisltd">
+    #<Mechanize::Form::Text:0x1adf100
+     @name="username",
+     @node=
+      #(Element:0xd6f8d0 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd69610 { name = "autocapitalize", value = "off" }),
+          #(Attr:0xd69606 { name = "autocorrect", value = "off" }),
+          #(Attr:0xd695fc { name = "id", value = "username" }),
+          #(Attr:0xd695f2 { name = "name", value = "username" }),
+          #(Attr:0xd695e8 { name = "type", value = "text" })]
+        }),
+     @value="">
+    #<Mechanize::Form::Field:0x1adefc0
+     @name="password",
+     @node=
+      #(Element:0xd6f830 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd67a22 { name = "id", value = "password" }),
+          #(Attr:0xd67a0e { name = "name", value = "password" }),
+          #(Attr:0xd67a04 { name = "type", value = "password" })]
+        }),
+     @value="">}
+   {radiobuttons}
+   {checkboxes
+    #<Mechanize::Form::CheckBox:0x1adee94
+     @checked=false,
+     @name="remember_me",
+     @value="1">}
+   {file_uploads}
+   {buttons
+    #<Mechanize::Form::Submit:0x1aded40
+     @name="commit",
+     @node=
+      #(Element:0xd6f6dc {
+        name = "input",
+        attributes = [
+          #(Attr:0xd65df8 { name = "class", value = "button" }),
+          #(Attr:0xd65dee { name = "name", value = "commit" }),
+          #(Attr:0xd65de4 { name = "type", value = "submit" }),
+          #(Attr:0xd65dda { name = "value", value = "Sign in" })]
+        }),
+     @value="Sign in">}>}>
+
+D, [2011-06-16T14:39:13.680040 #69184] DEBUG -- : #<Mechanize::Form
+ {name nil}
+ {method "POST"}
+ {action "https://launchpad.37signals.com/authenticate"}
+ {fields
+  #<Mechanize::Form::Hidden:0x1adf4ac
+   @name="authenticity_token",
+   @node=
+    #(Element:0xd6faa6 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6e278 { name = "name", value = "authenticity_token" }),
+        #(Attr:0xd6e26e { name = "type", value = "hidden" }),
+        #(Attr:0xd6e246 {
+          name = "value",
+          value = "F3Br+RCDfIn6x1ZIek1mcHFjujkTgOq4HIZpV2hvsQ4="
+          })]
+      }),
+   @value="F3Br+RCDfIn6x1ZIek1mcHFjujkTgOq4HIZpV2hvsQ4=">
+  #<Mechanize::Form::Hidden:0x1adf358
+   @name="product",
+   @node=
+    #(Element:0xd6f9fc {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6ca72 { name = "id", value = "product" }),
+        #(Attr:0xd6ca68 { name = "name", value = "product" }),
+        #(Attr:0xd6ca5e { name = "type", value = "hidden" }),
+        #(Attr:0xd6ca54 { name = "value", value = "basecamp" })]
+      }),
+   @value="basecamp">
+  #<Mechanize::Form::Hidden:0x1adf22c
+   @name="subdomain",
+   @node=
+    #(Element:0xd6f966 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd6afe2 { name = "id", value = "subdomain" }),
+        #(Attr:0xd6afd8 { name = "name", value = "subdomain" }),
+        #(Attr:0xd6afb0 { name = "type", value = "hidden" }),
+        #(Attr:0xd6afa6 { name = "value", value = "aisltd" })]
+      }),
+   @value="aisltd">
+  #<Mechanize::Form::Text:0x1adf100
+   @name="username",
+   @node=
+    #(Element:0xd6f8d0 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd69610 { name = "autocapitalize", value = "off" }),
+        #(Attr:0xd69606 { name = "autocorrect", value = "off" }),
+        #(Attr:0xd695fc { name = "id", value = "username" }),
+        #(Attr:0xd695f2 { name = "name", value = "username" }),
+        #(Attr:0xd695e8 { name = "type", value = "text" })]
+      }),
+   @value="">
+  #<Mechanize::Form::Field:0x1adefc0
+   @name="password",
+   @node=
+    #(Element:0xd6f830 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd67a22 { name = "id", value = "password" }),
+        #(Attr:0xd67a0e { name = "name", value = "password" }),
+        #(Attr:0xd67a04 { name = "type", value = "password" })]
+      }),
+   @value="">}
+ {radiobuttons}
+ {checkboxes
+  #<Mechanize::Form::CheckBox:0x1adee94
+   @checked=false,
+   @name="remember_me",
+   @value="1">}
+ {file_uploads}
+ {buttons
+  #<Mechanize::Form::Submit:0x1aded40
+   @name="commit",
+   @node=
+    #(Element:0xd6f6dc {
+      name = "input",
+      attributes = [
+        #(Attr:0xd65df8 { name = "class", value = "button" }),
+        #(Attr:0xd65dee { name = "name", value = "commit" }),
+        #(Attr:0xd65de4 { name = "type", value = "submit" }),
+        #(Attr:0xd65dda { name = "value", value = "Sign in" })]
+      }),
+   @value="Sign in">}>
+
+D, [2011-06-16T14:39:16.209792 #69184] DEBUG -- : #<Mechanize::Page
+ {url
+  #<URI::HTTPS:0x1a92454 URL:https://aisltd.basecamphq.com/projects/3146702/edit>}
+ {meta}
+ {title "GCOA Development & Support > Project Settings"}
+ {iframes}
+ {frames}
+ {links
+  #<Mechanize::Page::Link "Launchpad" "/id/identities/81505/goto">
+  #<Mechanize::Page::Link "Basecamp Projects" "/id/users/3413038/goto">
+  #<Mechanize::Page::Link "Highrise Contacts" "/id/users/8554773/goto">
+  #<Mechanize::Page::Link "Backpack Organizer" "/id/users/8554778/goto">
+  #<Mechanize::Page::Link "Campfire Chat" "/id/users/8554783/goto">
+  #<Mechanize::Page::Link
+   "How to enable JavaScript in your browser"
+   "http://www.google.com/support/bin/answer.py?answer=23852">
+  #<Mechanize::Page::Link "try loading this page again" "">
+  #<Mechanize::Page::Link
+   "Back to Dashboard"
+   "https://aisltd.basecamphq.com/clients">
+  #<Mechanize::Page::Link
+   "Switch to a different project"
+   "/projects/3146702/edit">
+  #<Mechanize::Page::Link
+   "Azimuth Business Administration Azimuth Internet Services, Ltd"
+   "/projects/3154787/project">
+  #<Mechanize::Page::Link
+   "Azimuth Project Management Azimuth Internet Services, Ltd"
+   "/projects/3146838/project">
+  #<Mechanize::Page::Link
+   "Azimuth Research & Development Azimuth Internet Services, Ltd"
+   "/projects/3154393/project">
+  #<Mechanize::Page::Link
+   "Azimuth Sales & Marketing Azimuth Internet Services, Ltd"
+   "/projects/3154382/project">
+  #<Mechanize::Page::Link
+   "Azimuth Systems Administration Azimuth Internet Services, Ltd"
+   "/projects/3146794/project">
+  #<Mechanize::Page::Link
+   "FestivalFinds.net Azimuth Internet Services, Ltd"
+   "/projects/7245835/project">
+  #<Mechanize::Page::Link
+   "Web Development & Support Curaderm Global"
+   "/projects/3440447/project">
+  #<Mechanize::Page::Link
+   "GCOA Development & Support Great Coffees of America"
+   "/projects/3146702/project">
+  #<Mechanize::Page::Link
+   "RTW Development & Support Road Town Wholesale"
+   "/projects/3852762/project">
+  #<Mechanize::Page::Link
+   "TCRI Development & Support  The Coffee Review, Inc."
+   "/projects/3154078/project">
+  #<Mechanize::Page::Link
+   "Project Settings"
+   "https://aisltd.basecamphq.com/projects/3146702-gcoa-development-support/edit">
+  #<Mechanize::Page::Link
+   "My info"
+   "/projects/3146702-gcoa-development-support/people/3684932/edit">
+  #<Mechanize::Page::Link "Sign out" "/logout">
+  #<Mechanize::Page::Link
+   "HELP"
+   "http://help.37signals.com/basecamp?e=Y2hyaXN0b3BoZXJAYXppbXV0aG9ubGluZS5jb20%3D&f=Q2hyaXN0b3BoZXIgTWF1amVhbg%3D%3D&n=Y21hdWplYW4%3D&u=aHR0cHM6Ly9haXNsdGQuYmFzZWNhbXBocS5jb20vcHJvamVjdHMvMzE0NjcwMi9lZGl0">
+  #<Mechanize::Page::Link "Print" "/projects/3146702/edit?print_mode=1">
+  #<Mechanize::Page::Link
+   "Overview"
+   "/projects/3146702-gcoa-development-support/log">
+  #<Mechanize::Page::Link
+   "Messages"
+   "/projects/3146702-gcoa-development-support/posts">
+  #<Mechanize::Page::Link
+   "To-Dos"
+   "/projects/3146702-gcoa-development-support/todo_lists">
+  #<Mechanize::Page::Link
+   "Calendar"
+   "/projects/3146702-gcoa-development-support/milestones">
+  #<Mechanize::Page::Link
+   "Writeboards"
+   "/projects/3146702-gcoa-development-support/writeboards">
+  #<Mechanize::Page::Link
+   "Chat"
+   "/projects/3146702-gcoa-development-support/chat">
+  #<Mechanize::Page::Link
+   "Time"
+   "/projects/3146702-gcoa-development-support/time_entries">
+  #<Mechanize::Page::Link
+   "Files"
+   "/projects/3146702-gcoa-development-support/files">
+  #<Mechanize::Page::Link
+   "Search"
+   "/projects/3146702-gcoa-development-support/search">
+  #<Mechanize::Page::Link
+   "People & Permissions"
+   "/projects/3146702-gcoa-development-support/companies">
+  #<Mechanize::Page::Link
+   "Basecamp"
+   "http://basecamphq.com?source=bcappfooter">
+  #<Mechanize::Page::Link
+   "Yes, I understand — delete this project"
+   "/projects/3146702-gcoa-development-support/project/delete_project">}
+ {forms
+  #<Mechanize::Form
+   {name nil}
+   {method "POST"}
+   {action "/projects/3146702"}
+   {fields
+    #<Mechanize::Form::Hidden:0x1a77c08
+     @name="authenticity_token",
+     @node=
+      #(Element:0xd3be54 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd3a338 { name = "name", value = "authenticity_token" }),
+          #(Attr:0xd3a32e { name = "type", value = "hidden" }),
+          #(Attr:0xd3a324 {
+            name = "value",
+            value = "F3Br+RCDfIn6x1ZIek1mcHFjujkTgOq4HIZpV2hvsQ4="
+            })]
+        }),
+     @value="F3Br+RCDfIn6x1ZIek1mcHFjujkTgOq4HIZpV2hvsQ4=">
+    #<Mechanize::Form::Text:0x1a77ab4
+     @name="settings[project][name]",
+     @node=
+      #(Element:0xd3bdaa {
+        name = "input",
+        attributes = [
+          #(Attr:0xd38cea { name = "type", value = "text" }),
+          #(Attr:0xd38ce0 { name = "size", value = "40" }),
+          #(Attr:0xd38cd6 {
+            name = "name",
+            value = "settings[project][name]"
+            }),
+          #(Attr:0xd38ccc { name = "id", value = "projectName" }),
+          #(Attr:0xd38cc2 {
+            name = "value",
+            value = "GCOA Development & Support"
+            })]
+        }),
+     @value="GCOA Development & Support">
+    #<Mechanize::Form::Hidden:0x1a77960
+     @name="settings[project][show_announcement]",
+     @node=
+      #(Element:0xd3bd00 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd3703e {
+            name = "id",
+            value = "settings_project_show_announcement"
+            }),
+          #(Attr:0xd37034 {
+            name = "name",
+            value = "settings[project][show_announcement]"
+            }),
+          #(Attr:0xd3702a { name = "type", value = "hidden" }),
+          #(Attr:0xd37020 { name = "value", value = "0" })]
+        }),
+     @value="0">
+    #<Mechanize::Form::Field:0x1a76f60
+     @name="settings[project][announcement]",
+     @node=
+      #(Element:0xd3b7d8 {
+        name = "textarea",
+        attributes = [
+          #(Attr:0xd354aa {
+            name = "id",
+            value = "settings_project_announcement"
+            }),
+          #(Attr:0xd354a0 {
+            name = "name",
+            value = "settings[project][announcement]"
+            }),
+          #(Attr:0xd35496 { name = "rows", value = "5" }),
+          #(Attr:0xd3548c { name = "style", value = "width: 100%" })],
+        children = [
+          #(Text "\n<h2>IMPORTANT NOTICE:</h2>As of June 2, 2011 12:00:24, total hours are at <b>3.4</b> (including 3.4 rollover hours). This is 8.50% of the current contract hours of <b>40</b>. Current burn rate is <span style=\"color: yellow;font-weight:bold;background-color: white\">142.30%</span>. We are <b>1.01</b> hours ahead.")]
+        }),
+     @value=
+      "\n<h2>IMPORTANT NOTICE:</h2>As of June 2, 2011 12:00:24, total hours are at <b>3.4</b> (including 3.4 rollover hours). This is 8.50% of the current contract hours of <b>40</b>. Current burn rate is <span style=\"color: yellow;font-weight:bold;background-color: white\">142.30%</span>. We are <b>1.01</b> hours ahead.">
+    #<Mechanize::Form::SelectList:0x1a76bc8
+     @name="settings[project][start_page]",
+     @node=
+      #(Element:0xd3b60c {
+        name = "select",
+        attributes = [
+          #(Attr:0xd33754 {
+            name = "name",
+            value = "settings[project][start_page]"
+            })],
+        children = [
+          #(Element:0xd3b2c4 {
+            name = "option",
+            attributes = [
+              #(Attr:0xd32cf0 { name = "value", value = "log" }),
+              #(Attr:0xd32ce6 { name = "selected", value = "selected" })],
+            children = [ #(Text "Overview")]
+            }),
+          #(Element:0xd3b274 {
+            name = "option",
+            attributes = [ #(Attr:0xd31e72 { name = "value", value = "all" })],
+            children = [ #(Text "All Messages")]
+            }),
+          #(Element:0xd3b224 {
+            name = "option",
+            attributes = [
+              #(Attr:0xd31346 { name = "value", value = "todos" })],
+            children = [ #(Text "To-Do's")]
+            }),
+          #(Element:0xd3b1d4 {
+            name = "option",
+            attributes = [
+              #(Attr:0xd307f2 { name = "value", value = "milestones" })],
+            children = [ #(Text "Calendar")]
+            }),
+          #(Element:0xd3b184 {
+            name = "option",
+            attributes = [
+              #(Attr:0xd2fe24 { name = "value", value = "files" })],
+            children = [ #(Text "Files")]
+            })]
+        }),
+     @options=[log, all, todos, milestones, files],
+     @value=[]>
+    #<Mechanize::Form::SelectList:0x1a7618c
+     @name="settings[project][company_id]",
+     @node=
+      #(Element:0xd3b0ee {
+        name = "select",
+        attributes = [
+          #(Attr:0xd2e970 {
+            name = "id",
+            value = "settings_project_company_id"
+            }),
+          #(Attr:0xd2e966 {
+            name = "name",
+            value = "settings[project][company_id]"
+            })],
+        children = [
+          #(Element:0xd3af54 {
+            name = "option",
+            attributes = [
+              #(Attr:0xd2dcc8 { name = "value", value = "1345970" })],
+            children = [ #(Text "Azimuth Internet Services, Ltd")]
+            }),
+          #(Element:0xd3af04 {
+            name = "option",
+            attributes = [
+              #(Attr:0xd2d322 { name = "value", value = "1345982" }),
+              #(Attr:0xd2d318 { name = "selected", value = "selected" })],
+            children = [ #(Text "Great Coffees of America")]
+            })]
+        }),
+     @options=[1345970, 1345982],
+     @value=[]>}
+   {radiobuttons
+    #<Mechanize::Form::RadioButton:0x1a776e0
+     @checked=true,
+     @name="settings[project][status]",
+     @value="active">
+    #<Mechanize::Form::RadioButton:0x1a77578
+     @checked=false,
+     @name="settings[project][status]",
+     @value="on_hold">
+    #<Mechanize::Form::RadioButton:0x1a77424
+     @checked=false,
+     @name="settings[project][status]",
+     @value="archived">}
+   {checkboxes
+    #<Mechanize::Form::CheckBox:0x1a77848
+     @checked=true,
+     @name="settings[project][show_announcement]",
+     @value="1">}
+   {file_uploads}
+   {buttons
+    #<Mechanize::Form::Submit:0x1a772d0
+     @name=nil,
+     @node=
+      #(Element:0xd3b9a4 {
+        name = "input",
+        attributes = [
+          #(Attr:0xd2a244 { name = "type", value = "submit" }),
+          #(Attr:0xd2a23a { name = "value", value = "Save changes" }),
+          #(Attr:0xd2a230 {
+            name = "onclick",
+            value = "return validateField('projectName', 'The project must have a name');"
+            })]
+        }),
+     @value="Save changes">}>}>
+
+D, [2011-06-16T14:39:16.220052 #69184] DEBUG -- : #<Mechanize::Form
+ {name nil}
+ {method "POST"}
+ {action "/projects/3146702"}
+ {fields
+  #<Mechanize::Form::Hidden:0x1a77c08
+   @name="authenticity_token",
+   @node=
+    #(Element:0xd3be54 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd3a338 { name = "name", value = "authenticity_token" }),
+        #(Attr:0xd3a32e { name = "type", value = "hidden" }),
+        #(Attr:0xd3a324 {
+          name = "value",
+          value = "F3Br+RCDfIn6x1ZIek1mcHFjujkTgOq4HIZpV2hvsQ4="
+          })]
+      }),
+   @value="F3Br+RCDfIn6x1ZIek1mcHFjujkTgOq4HIZpV2hvsQ4=">
+  #<Mechanize::Form::Text:0x1a77ab4
+   @name="settings[project][name]",
+   @node=
+    #(Element:0xd3bdaa {
+      name = "input",
+      attributes = [
+        #(Attr:0xd38cea { name = "type", value = "text" }),
+        #(Attr:0xd38ce0 { name = "size", value = "40" }),
+        #(Attr:0xd38cd6 { name = "name", value = "settings[project][name]" }),
+        #(Attr:0xd38ccc { name = "id", value = "projectName" }),
+        #(Attr:0xd38cc2 {
+          name = "value",
+          value = "GCOA Development & Support"
+          })]
+      }),
+   @value="GCOA Development & Support">
+  #<Mechanize::Form::Hidden:0x1a77960
+   @name="settings[project][show_announcement]",
+   @node=
+    #(Element:0xd3bd00 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd3703e {
+          name = "id",
+          value = "settings_project_show_announcement"
+          }),
+        #(Attr:0xd37034 {
+          name = "name",
+          value = "settings[project][show_announcement]"
+          }),
+        #(Attr:0xd3702a { name = "type", value = "hidden" }),
+        #(Attr:0xd37020 { name = "value", value = "0" })]
+      }),
+   @value="0">
+  #<Mechanize::Form::Field:0x1a76f60
+   @name="settings[project][announcement]",
+   @node=
+    #(Element:0xd3b7d8 {
+      name = "textarea",
+      attributes = [
+        #(Attr:0xd354aa {
+          name = "id",
+          value = "settings_project_announcement"
+          }),
+        #(Attr:0xd354a0 {
+          name = "name",
+          value = "settings[project][announcement]"
+          }),
+        #(Attr:0xd35496 { name = "rows", value = "5" }),
+        #(Attr:0xd3548c { name = "style", value = "width: 100%" })],
+      children = [
+        #(Text "\n<h2>IMPORTANT NOTICE:</h2>As of June 2, 2011 12:00:24, total hours are at <b>3.4</b> (including 3.4 rollover hours). This is 8.50% of the current contract hours of <b>40</b>. Current burn rate is <span style=\"color: yellow;font-weight:bold;background-color: white\">142.30%</span>. We are <b>1.01</b> hours ahead.")]
+      }),
+   @value=
+    "\n<h2>IMPORTANT NOTICE:</h2>As of June 2, 2011 12:00:24, total hours are at <b>3.4</b> (including 3.4 rollover hours). This is 8.50% of the current contract hours of <b>40</b>. Current burn rate is <span style=\"color: yellow;font-weight:bold;background-color: white\">142.30%</span>. We are <b>1.01</b> hours ahead.">
+  #<Mechanize::Form::SelectList:0x1a76bc8
+   @name="settings[project][start_page]",
+   @node=
+    #(Element:0xd3b60c {
+      name = "select",
+      attributes = [
+        #(Attr:0xd33754 {
+          name = "name",
+          value = "settings[project][start_page]"
+          })],
+      children = [
+        #(Element:0xd3b2c4 {
+          name = "option",
+          attributes = [
+            #(Attr:0xd32cf0 { name = "value", value = "log" }),
+            #(Attr:0xd32ce6 { name = "selected", value = "selected" })],
+          children = [ #(Text "Overview")]
+          }),
+        #(Element:0xd3b274 {
+          name = "option",
+          attributes = [ #(Attr:0xd31e72 { name = "value", value = "all" })],
+          children = [ #(Text "All Messages")]
+          }),
+        #(Element:0xd3b224 {
+          name = "option",
+          attributes = [ #(Attr:0xd31346 { name = "value", value = "todos" })],
+          children = [ #(Text "To-Do's")]
+          }),
+        #(Element:0xd3b1d4 {
+          name = "option",
+          attributes = [
+            #(Attr:0xd307f2 { name = "value", value = "milestones" })],
+          children = [ #(Text "Calendar")]
+          }),
+        #(Element:0xd3b184 {
+          name = "option",
+          attributes = [ #(Attr:0xd2fe24 { name = "value", value = "files" })],
+          children = [ #(Text "Files")]
+          })]
+      }),
+   @options=[log, all, todos, milestones, files],
+   @value=[]>
+  #<Mechanize::Form::SelectList:0x1a7618c
+   @name="settings[project][company_id]",
+   @node=
+    #(Element:0xd3b0ee {
+      name = "select",
+      attributes = [
+        #(Attr:0xd2e970 {
+          name = "id",
+          value = "settings_project_company_id"
+          }),
+        #(Attr:0xd2e966 {
+          name = "name",
+          value = "settings[project][company_id]"
+          })],
+      children = [
+        #(Element:0xd3af54 {
+          name = "option",
+          attributes = [
+            #(Attr:0xd2dcc8 { name = "value", value = "1345970" })],
+          children = [ #(Text "Azimuth Internet Services, Ltd")]
+          }),
+        #(Element:0xd3af04 {
+          name = "option",
+          attributes = [
+            #(Attr:0xd2d322 { name = "value", value = "1345982" }),
+            #(Attr:0xd2d318 { name = "selected", value = "selected" })],
+          children = [ #(Text "Great Coffees of America")]
+          })]
+      }),
+   @options=[1345970, 1345982],
+   @value=[]>}
+ {radiobuttons
+  #<Mechanize::Form::RadioButton:0x1a776e0
+   @checked=true,
+   @name="settings[project][status]",
+   @value="active">
+  #<Mechanize::Form::RadioButton:0x1a77578
+   @checked=false,
+   @name="settings[project][status]",
+   @value="on_hold">
+  #<Mechanize::Form::RadioButton:0x1a77424
+   @checked=false,
+   @name="settings[project][status]",
+   @value="archived">}
+ {checkboxes
+  #<Mechanize::Form::CheckBox:0x1a77848
+   @checked=true,
+   @name="settings[project][show_announcement]",
+   @value="1">}
+ {file_uploads}
+ {buttons
+  #<Mechanize::Form::Submit:0x1a772d0
+   @name=nil,
+   @node=
+    #(Element:0xd3b9a4 {
+      name = "input",
+      attributes = [
+        #(Attr:0xd2a244 { name = "type", value = "submit" }),
+        #(Attr:0xd2a23a { name = "value", value = "Save changes" }),
+        #(Attr:0xd2a230 {
+          name = "onclick",
+          value = "return validateField('projectName', 'The project must have a name');"
+          })]
+      }),
+   @value="Save changes">}>
+

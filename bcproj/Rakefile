@@ -1,0 +1,35 @@
+require 'rake'
+require 'rake/testtask'
+require 'rake/rdoctask'
+
+Rake::TestTask.new do |t|
+  t.libs << "lib"
+  t.test_files = FileList['test/test*.rb']
+  t.verbose = true
+end
+
+namespace :db do
+  desc "Migrate the database"
+  task(:migrate => :environment) do
+    ActiveRecord::Base.logger = Logger.new(STDOUT)
+    ActiveRecord::Migration.verbose = true
+    ActiveRecord::Migrator.migrate("db/migrate")
+  end
+end
+
+namespace :doc do
+  Rake::RDocTask.new do |rd|
+    rd.main = "README.rdoc"
+    rd.rdoc_files.include("README.rdoc", "lib/**/*.rb")
+    rd.rdoc_dir = "doc"
+  end
+end
+
+# Internal support stuff
+
+task :environment do
+  require 'logger'
+  require 'lib/db.rb'
+  DB.initdb
+end
+

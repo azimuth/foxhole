@@ -1,0 +1,6 @@
+source "http://rubygems.org"
+
+gem 'mechanize'
+gem 'activerecord'
+gem 'activeresource'
+gem 'xml-simple'

@@ -1,0 +1,15 @@
+= Synopsis
+
+A program for setting the "announcement" text in a Basecamp Project.
+
+* Uses the basecamp library to collect hours for the month 
+* Uses WWW::Mechanize to update the announcement
+
+<tt>ruby bcproj.rb</tt>
+
+edit <tt>config/bcproj.config</tt> to change monthly values
+
+= Authors 
+
+Christopher Maujean:: christopher@azimuthonline.com
+Day Waterbury:: day@azimuthonline.com

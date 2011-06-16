@@ -1,0 +1,19 @@
+#!/usr/bin/ruby
+require 'webrick'
+include WEBrick
+require 'logger'
+
+logger = Logger.new('log/docserver.log')
+
+s = HTTPServer.new(
+  :Port => ARGV[0],
+  :BindAddress => '0.0.0.0',
+  :DocumentRoot => Dir::pwd + "/doc",
+  :Logger => logger
+)
+
+Process.daemon(true) 
+trap("INT") {s.shutdown; Process.exit}
+trap("TERM"){s.shutdown; Process.exit}
+s.start
+
