@@ -1,0 +1,37 @@
+url: "aisltd.basecamphq.com"
+user: ""
+password: ""
+project_id: ""
+contracthours: 40
+rolloverhours: 0 
+additionalhours: 0
+hoursgratis: 0 
+timezoneoffset: -3
+
+logger:
+  file: "log/bcproj.log"
+  level: "Logger::DEBUG"
+
+colors:
+  closelow:
+    foreground: yellow
+    background: white
+  midlow:
+    foreground: orange
+    background: white
+  farlow:
+    foreground: red
+    background: white
+  ontrack:
+    foreground: green 
+    background: white
+  closehigh:
+    foreground: yellow
+    background: white
+  midhigh:
+    foreground: orange
+    background: white
+  farhigh:
+    foreground: red
+    background: white
+
